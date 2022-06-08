@@ -1,0 +1,47 @@
+{
+  "name": "eslint-config-0x1461a0",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "xiefeng",
+    "email": "x1294699027@gmail.com"
+  },
+  "files": [
+    "configs/*"
+  ],
+  "exports": {
+    "./jsx": "./configs/jsx.js",
+    "./tsx": "./configs/tsx.js",
+    "./vue": "./configs/vue.js",
+    "./basic": "./configs/basic.js",
+    "./react": "./configs/react.js",
+    "./vue-ts": "./configs/vue-ts.js",
+    "./react-ts": "./configs/react-ts.js",
+    "./javascript": "./configs/javascript.js",
+    "./typescript": "./configs/typescript.js"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.17.0",
+    "eslint-config-jammy": "^0.0.11",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "vue-eslint-parser": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "react": "^18.1.0",
+    "typescript": "^4.7.3"
+  },
+  "scripts": {
+    "lint-js": "eslint --config configs/basic.js src/*.js",
+    "lint-ts": "eslint --config configs/typescript.js src/*.ts",
+    "lint-jsx": "eslint --config configs/jsx.js src/*.jsx",
+    "lint-tsx": "eslint --config configs/tsx.js src/*.tsx",
+    "lint-vue": "eslint --config configs/vue.js src/*.vue",
+    "lint-react": "eslint --config configs/react.js src/*.jsx src/*.js",
+    "lint-vue-ts": "eslint --config configs/vue-ts.js src/*.vue",
+    "lint-react-ts": "eslint --config configs/react-ts.js src/*.tsx"
+  }
+}
