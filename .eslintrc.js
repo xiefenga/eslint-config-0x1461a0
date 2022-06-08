@@ -2,5 +2,8 @@
 
 module.exports = {
   root: true,
-  extends: ['./configs/vue'],
+  env: {
+    node: true,
+  },
+  extends: ['./configs/javascript'],
 }
